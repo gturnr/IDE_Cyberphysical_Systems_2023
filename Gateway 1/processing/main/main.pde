@@ -64,7 +64,7 @@ void mousePressed() {
     int yPos = 120 + i * 100;
     
     // Check if the minus button is clicked
-    if (mouseX > 80 - 20 && mouseX < 80 + 20 && mouseY > yPos - 20 && mouseY < yPos + 20) {
+    if (mouseX > 80 - 25 && mouseX < 80 + 25 && mouseY > yPos - 25 && mouseY < yPos + 25) {
       // Deduct 10 from the value (not below 0)
       rowValues[i] = max(0, rowValues[i] - 10);
       println("Row " + (i+1) + ": Minus clicked. Value: " + rowValues[i]);
@@ -73,7 +73,7 @@ void mousePressed() {
     }
     
     // Check if the plus button is clicked
-    if (mouseX > 300 - 20 && mouseX < 300 + 20 && mouseY > yPos - 20 && mouseY < yPos + 20) {
+    if (mouseX > 300 - 25 && mouseX < 300 + 25 && mouseY > yPos - 25 && mouseY < yPos + 25) {
       // Add 10 to the value (not above 180)
       rowValues[i] = min(180, rowValues[i] + 10);
       println("Row " + (i+1) + ": Plus clicked. Value: " + rowValues[i]);
