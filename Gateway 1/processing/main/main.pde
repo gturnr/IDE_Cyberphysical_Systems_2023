@@ -21,13 +21,13 @@ void setup() {
 }
 
 void draw() {
-  background(200); // Clear previous frame
+  background(66, 135, 245); // Clear previous frame
   textAlign(CENTER, CENTER);
   textSize(20);
   fill(255); // White text color
   
   // Title
-  text("Robot Arm Control", width/2, 40);
+  text("Robot Arm Control - Group 8", width/2, 40);
 
   // Display the updated values and buttons
   for (int i = 0; i < 4; i++) {
