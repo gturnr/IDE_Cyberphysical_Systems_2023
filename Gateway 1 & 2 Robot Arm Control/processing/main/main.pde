@@ -9,7 +9,7 @@ String[] rowLabels = new String[4]; // Strings for row labels
 
 void setup() {
   size(400, 600);
-  println(Serial.list()[1]);
+  println(Serial.list());
   String portName = Serial.list()[1];
   port = new Serial(this, portName, 9600);
   
