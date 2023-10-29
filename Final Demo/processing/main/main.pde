@@ -1,3 +1,16 @@
+// Title:       main.pde
+//
+// Date:        26/10/2023
+//
+// Description: Processing code to collect OSC messages from audio sentiment model, and 
+//              process the average before sending to Arduino over serial.
+//
+// Purpose:     Written in part for final project submission to Cyber physical Systems 
+//              module 2023 IDE 1 Imperial College London and Royal College of Art. 
+//
+// Author(s):   Guy Turner glt23@ic.ac.uk
+// License:     AFL-3.0
+
 import processing.serial.*;
 import oscP5.*;
 
