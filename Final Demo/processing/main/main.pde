@@ -107,7 +107,7 @@ void processSentiment() {
     int averageSentiment = round(float(sum) / 100);
     // send Serial message to Arduino 
     println("Final sentiment: " + averageSentiment);
-    port.write(averageSentiment);
+    port.write(str(averageSentiment));
     
     // set program mode to 2, which gives user option to reset. 
     running = 2;
