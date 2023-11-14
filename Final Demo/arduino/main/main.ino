@@ -102,9 +102,12 @@ void behaviourVeryUnderconfident(){
   // This animation should portray a very unconfident moment.
   // Movement: Quivering Tilt and Aim. Tilt and Rotation finishes off target.
   // Ball: Throw and miss
+  delay(250);
   moveXYWithCoordination(-800, -800, 1200, 1200);
   delay(500);
   throwBall(1400, 45);
+  delay(500);
+  moveXYWithCoordination(800, 800, 1200, 1200);
 
   // After throw, return to neutral position
   Serial.println("Very underconfident action. \n");
@@ -116,14 +119,20 @@ void behaviourUnderconfident(){
   // This animation should portray an unconfident moment.
   // Movement: Quivering Tilt and Aim. Tilt finishes off target. Rotation on target.
   // Ball: Throw and miss
+  delay(250);
   moveXYWithCoordination(200, 200, 1600, 1600);
-  moveXYWithCoordination(-200, -200, 1600, 1600);
-  moveXYWithCoordination(200, 200, 1600, 1600);
-  moveXYWithCoordination(-200, -200, 1600, 1600);
-  moveXYWithCoordination(200, 200, 1600, 1600);
+  delay(250);
   moveXYWithCoordination(-200, -200, 1600, 1600);
   delay(500);
-  throwBall(1400, 45);
+  moveXYWithCoordination(200, 200, 1600, 1600);
+  delay(250);
+  moveXYWithCoordination(-200, -200, 1600, 1600);
+  delay(500);
+  moveXYWithCoordination(200, 200, 1600, 1600);
+  delay(250);
+  moveXYWithCoordination(-200, -200, 1600, 1600);
+  delay(500);
+  throwBall(1200, 45);
 
   // After throw, return to neutral position
   Serial.println("Underconfident action. \n");
@@ -135,15 +144,16 @@ void behaviourNeutral(){
   // This animation should portray a neutral moment.
   // Movement: Quivering Tilt and Aim. Tilt and Rotation finishes on target.
   // Ball: Throw and land
+  delay(500);
   moveXYWithCoordination(150, 150, 1600, 1600);
-  delay(250);
+  delay(500);
   moveXYWithCoordination(-150, -150, 1600, 1600);
-  delay(250);
+  delay(500);
   moveXYWithCoordination(-150, -150, 1600, 1600);
-  delay(250);
+  delay(500);
   moveXYWithCoordination(150, 150, 1600, 1600);
-  delay(250);
-  throwBall(2500, 42);
+  delay(500);
+  throwBall(1800, 42);
 
 }
 
@@ -152,8 +162,8 @@ void behaviourConfident(){
   // This animation should portray a confident moment.
   // Movement: Clear, concise movement in Tilt and Aim. Tilt and Rotation finishes on target. 
   // Ball: Throw and land
-
-  throwBall(2600, 45);
+  delay(500);
+  throwBall(1800, 45);
 
 }
 
@@ -162,11 +172,12 @@ void behaviourVeryConfident(){
   // This animation should portray a very confident moment.
   // Movement: Trick shot. 180 rotation left, 180 rotation right, Throw high into the hoop. 
   // Ball: Throw and land
-    moveXYWithCoordination(1600, 1600, 1600, 1600);
     delay(500);
-    moveXYWithCoordination(-1600, -1600, 1600, 1600);
+    moveXYWithCoordination(800, 800, 1600,1600);
     delay(500);
-    throwBall(2600, 45);
+    moveXYWithCoordination(-800, -800, 1600, 1600);
+    delay(500);
+    throwBall(1800, 45);
 
 
   // After throw, return to neutral position

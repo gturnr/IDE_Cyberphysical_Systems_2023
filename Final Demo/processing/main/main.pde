@@ -46,6 +46,8 @@ void setup() {
   // initialise Serial Port and OSC connection
   port = new Serial(this, portName, 9600);
   oscP5 = new OscP5(this, 12000);
+  port.write(str(4));
+  
 }
 
 // Function: draw. Purpose: draw GUI each new frame. Render text, boxes, and call relevant functionality
@@ -106,6 +108,7 @@ void processSentiment() {
     
     int averageSentiment = round(float(sum) / 100);
     // send Serial message to Arduino 
+    println(float(sum) / 100);
     println("Final sentiment: " + averageSentiment);
     port.write(str(averageSentiment));
     

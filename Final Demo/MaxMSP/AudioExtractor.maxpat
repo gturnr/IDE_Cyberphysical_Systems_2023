@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1720.0, 1083.0 ],
+		"rect" : [ 274.0, 100.0, 1052.0, 789.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -103,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 41.5, 59.5, 1444.5, 29.0 ],
-					"text" : "Guy Turner, Saffan Firbaus, David Quartey, Chenyu Yang",
+					"text" : "Guy Turner, Saffan Firbaus",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
